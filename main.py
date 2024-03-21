@@ -8,9 +8,10 @@ try:
     def play_sound():
         winsound.Beep(1000, 100)
 except ImportError:
-    import os
+    import AppKit
     def play_sound():
-        os.system('play -nq -t -alsa synth {} sine {}'.format(1, 440))
+        AppKit.NSSound.soundNamed_("Submarine").play()
+
 
 
 def create_gradient(canvas, width, height):
