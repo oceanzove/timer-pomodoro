@@ -3,6 +3,7 @@ from tkinter import messagebox
 import time
 from threading import Thread
 
+
 try:
     import winsound
     def play_sound():
@@ -10,7 +11,7 @@ try:
 except ImportError:
     import os
     def play_sound():
-        os.system("afplay /System/Library/Sounds/Submarine.aiff")
+        os.system("afplay /System/Library/Sounds/Funk.aiff")
 
 
 def create_gradient(canvas, width, height):
